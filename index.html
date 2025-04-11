@@ -31,6 +31,73 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       </script>
+      <style>
+        body {
+          padding-top: 70px; 
+          background-color: #f8f9fa;
+          color: #343a40;
+        }
+        .carousel-inner img {
+          height: 600px;           
+          object-fit: cover;      
+        }
+        #btnIrArriba {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .navbar {
+            background-color: #6c63ff !important;
+        }
+        .navbar .nav-link {
+            color: white !important;
+        }
+        .btn-primary {
+            background-color: #00bcd4;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0097a7;
+        }
+        .card {
+            border: none;
+        }
+        .card-title {
+            color: #6c63ff;
+        }
+        h2, h3 {
+            color: #6c63ff;
+        }
+        #proyecto table {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #proyecto th {
+            background-color: #6c63ff;
+            color: white;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        #proyecto td {
+            background-color: #e3f2fd;
+        }
+        #proyecto tr:nth-child(even) td {
+            background-color: #d1ecf1;
+        }
+        #proyecto table th,
+        #proyecto table td {
+            border: 1px solid #dee2e6;
+            padding: 1rem;
+        }
+      </style>
       
 
     <body>
@@ -58,74 +125,6 @@
                 </div>
               </nav>
               
-
-              <style>
-                body {
-                  padding-top: 70px; 
-                  background-color: #f8f9fa;
-                  color: #343a40;
-                }
-                .carousel-inner img {
-                  height: 600px;           
-                  object-fit: cover;      
-                }
-                #btnIrArriba {
-                    position: fixed;
-                    bottom: 20px;
-                    right: 20px;
-                    z-index: 1000;
-                    display: none;
-                    width: 45px;
-                    height: 45px;
-                    font-size: 20px;
-                    text-align: center;
-                    line-height: 1.5;
-                }
-                .navbar {
-                    background-color: #6c63ff !important;
-                }
-                .navbar .nav-link {
-                    color: white !important;
-                }
-                .btn-primary {
-                    background-color: #00bcd4;
-                    border: none;
-                }
-                .btn-primary:hover {
-                    background-color: #0097a7;
-                }
-                .card {
-                    border: none;
-                }
-                .card-title {
-                    color: #6c63ff;
-                }
-                h2, h3 {
-                    color: #6c63ff;
-                }
-                #proyecto table {
-                    background-color: white;
-                    border-radius: 10px;
-                    overflow: hidden;
-                }
-                #proyecto th {
-                    background-color: #6c63ff;
-                    color: white;
-                    font-weight: bold;
-                    vertical-align: middle;
-                }
-                #proyecto td {
-                    background-color: #e3f2fd;
-                }
-                #proyecto tr:nth-child(even) td {
-                    background-color: #d1ecf1;
-                }
-                #proyecto table th,
-                #proyecto table td {
-                    border: 1px solid #dee2e6;
-                    padding: 1rem;
-                }
-              </style>
               
               <div class="container my-5">
                 <div id="miCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
